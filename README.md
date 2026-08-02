@@ -105,7 +105,6 @@ After generating the modified BIN file, you **must** correct the checksum before
 Compatible tools include:
 
 * ✔️ me7sum
-* ✔️ ME7Sum
 * ✔️ Other Bosch ME7 checksum utilities
 
 > **Flashing a BIN with an invalid checksum may result in an ECU that does not operate correctly.**
