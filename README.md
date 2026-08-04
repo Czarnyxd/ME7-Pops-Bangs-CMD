@@ -21,6 +21,18 @@ The application automatically searches for the required calibration maps, applie
 * ✅ Simple command-line interface
 * ✅ Open Source
 
+
+# 🚗 Supported ECUs
+
+The current version has been tested on the following **Bosch ME7.5 1MB** software variants:
+
+- 1.8T 20V 150HP
+- 1.8T 20V 180HP
+- 1.8T 20V 210HP
+- 1.8T 20V 225HP
+
+Support for additional ME7.5 variants is continuously being expanded.
+
 ---
 
 # 🗺️ Supported Maps
