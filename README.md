@@ -44,6 +44,61 @@ The installer automatically locates the following calibration maps:
 * 📍 KFTVSA
 * 📍 KFTVSAKAT
 
+
+## 🔥 Pops & Bangs Profiles
+
+The installer provides three carefully calibrated Pops & Bangs profiles. Each profile adjusts the ignition retard (`KFZWMN`) to control the intensity of the exhaust pops while keeping the remaining calibration parameters identical. This ensures consistent operation, allowing you to choose the desired sound level without affecting the activation strategy.
+
+### Modified Calibration Maps
+
+#### 📍 KFZWMN – Ignition Retard
+
+Controls the ignition timing during the Pops & Bangs event. Increasing ignition retard shifts combustion later into the exhaust stroke, producing louder and more aggressive crackles and bangs.
+
+| Profile       | KFZWMN (Signed) | Ignition Retard | Effect                            |
+| ------------- | --------------: | --------------: | --------------------------------- |
+| 🟢 **Low**    |         **-26** |      **-19.5°** | Mild pops and crackles            |
+| 🟡 **Medium** |         **-33** |     **-24.75°** | Louder and more frequent pops     |
+| 🔴 **High**   |         **-40** |      **-30.0°** | Maximum aggressive pops and bangs |
+
+---
+
+#### 📍 KFNWEGM – Fuel Cut RPM Threshold
+
+Defines the engine speed threshold used by the Pops & Bangs strategy. The installer sets the entire map to **170**, corresponding to **6800 RPM**, allowing the effect to remain active across the full upper RPM range.
+
+**Modified value:** **170** (**6800 RPM**)
+
+---
+
+#### 📍 KFTVSA – Ignition Retard Duration
+
+Defines the duration of the ignition retard after throttle lift-off. The installer sets the map to **255** (**2.55 seconds**), ensuring a consistent and predictable Pops & Bangs effect.
+
+**Modified value:** **255** (**2.55 seconds**)
+
+---
+
+#### 📍 KFTVSAKAT – Catalyst Protection Delay
+
+Defines the catalyst protection delay associated with the ignition retard strategy. The installer sets the map to **255** (**10.2 seconds**), matching the behavior of the original application.
+
+**Modified value:** **255** (**10.2 seconds**)
+
+---
+
+### Summary
+
+All profiles use the same supporting calibration values:
+
+* ✅ **Single Ignition Strategy**
+* ✅ **KFNWEGM:** **170** (**6800 RPM**)
+* ✅ **KFTVSA:** **255** (**2.55 seconds**)
+* ✅ **KFTVSAKAT:** **255** (**10.2 seconds**)
+
+The **only** parameter that changes between the available profiles is **KFZWMN (Ignition Retard)**, allowing you to select the desired Pops & Bangs intensity while preserving identical activation behavior and timing across all presets.
+
+
 ---
 
 # 🚀 Usage
